@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root variables for colors */
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(to bottom right, #1852F1, #ffffff); /* Blue to white gradient */
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(to bottom right, #1852F1, #0a0a0a); /* Blue to dark background for dark mode */
     --foreground: #ededed;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background); /* Apply the gradient background */
   font-family: Arial, Helvetica, sans-serif;
 }
