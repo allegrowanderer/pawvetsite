@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const response = await axios.post(
       OPENAI_API_URL,
       {
-        model: "gpt-3.5-turbo", // Replace with your desired model
+        model: "chatgpt-4o-latest", // Replace with your desired model
         max_tokens: 300, // Limit the maximum tokens in the response
         messages: [
           {
