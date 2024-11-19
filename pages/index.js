@@ -16,6 +16,11 @@ export default function Home() {
     "Your trusted AI veterinarian.",
     "Ask me anything about your pet's health and care.",
     "Together, we ensure your pet's well-being.",
+    "What vaccines does my puppy need?",
+    "Can I give my cat human food?",
+    "Why does my dog keep coughing?",
+    "My cat keeps meowing at the door. What should I do?",
+    "How do I get my parrot to stop biting?",
   ];
 
   useEffect(() => {
@@ -160,7 +165,7 @@ export default function Home() {
     />
   </a>
   <a
-    href="https://t.me/PawVetAI"
+    href="https://t.me/PawVetAIBot"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center justify-center w-10 h-10"
@@ -207,9 +212,9 @@ export default function Home() {
                   <div
                     className={`${
                       msg.role === "user"
-                        ? "bg-[#4FD1C5] text-[#1A202C]"
-                        : "bg-[#E2E8F0] text-[#1A202C]"
-                    } px-4 py-2 rounded-lg max-w-lg break-words`}
+                      ? "bg-[#4FD1C5] text-[#1A202C]" // User message styling
+                      : "text-[#E2E8F0]" // Bot message styling with no background color
+                  } px-4 py-2 rounded-lg max-w-lg break-words`}
                   >
                     {msg.role === "assistant" && index === messages.length - 1 && !loading
                       ? displayedText
