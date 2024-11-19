@@ -136,6 +136,18 @@ export default function Home() {
       {/* Right Top Corner Icons */}
       <div className="absolute top-4 right-4 flex items-center space-x-4">
   <a
+    href="https://fun.virtuals.io/agents/0x653ED5BCC040C8b79aF1b842765Aa1b65D9034Af"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center w-10 h-10"
+  >
+    <img
+      src="/virtuals.svg"
+      alt="Virtuals"
+      className="w-full h-full object-contain"
+    />
+  </a>
+  <a
     href="https://x.com/PawVetAI"
     target="_blank"
     rel="noopener noreferrer"
@@ -148,7 +160,7 @@ export default function Home() {
     />
   </a>
   <a
-    href="https://t.me/PawVetAIBot"
+    href="https://t.me/PawVetAI"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center justify-center w-10 h-10"
